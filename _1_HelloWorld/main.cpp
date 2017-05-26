@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     label.show();
 
     /* 不建议以下做法*/
+
     //QLabel *label = new QLabel("Hello world");
     //label->show();
 
