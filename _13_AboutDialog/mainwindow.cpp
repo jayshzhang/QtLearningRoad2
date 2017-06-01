@@ -31,7 +31,20 @@ MainWindow::~MainWindow()
 void MainWindow::open()
 {
     /*顶层窗口*/
-    QDialog dlg;
-    dlg.setWindowTitle(tr("Hello, dlg!"));
-    dlg.exec();
+//    QDialog dlg;
+//    dlg.setWindowTitle(tr("Hello, dlg!"));
+//    dlg.exec();
+    /*非顶层窗口*/
+//    QDialog dlg(this);
+//    dlg.setWindowTitle(tr("Hello, dlg!"));
+//    dlg.exec();
+    /* 一闪而过，因为show()不会阻塞当前线程，dialog建立在栈上*/
+//    QDialog dlg(this);
+//    dlg.setWindowTitle(tr("Hello, dlg!"));
+//    dlg.show();
+    /* 改为在堆上建立dialog*/
+    QDialog *dlg = new QDialog;
+    dlg->setWindowTitle(tr("Hello, dlg!"));
+    dlg->show();
+
 }
