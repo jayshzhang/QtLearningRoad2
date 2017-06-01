@@ -5,21 +5,21 @@ connect()函数最常用的一般形式:
 
 `connect(sender, signal, receiver, slot);`
 
-### sender:   
+- sender:
 
-发出信号的对象
+	发出信号的对象
 
-### signal:  
+- signal:  
 
-发送对象发出的信号
+	发送对象发出的信号
 
-### recerver:
+- recerver:
  
-接收信号的对象
+	接收信号的对象
 
-### slot:
+- slot:
 
-接收对象在接收到信号之后所需要的调用的函数
+	接收对象在接收到信号之后所需要的调用的函数
 
 #11 布局管理器
 
