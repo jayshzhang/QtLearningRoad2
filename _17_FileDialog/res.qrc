@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="open">open.png</file>
+        <file alias="save">save.png</file>
+    </qresource>
+</RCC>
